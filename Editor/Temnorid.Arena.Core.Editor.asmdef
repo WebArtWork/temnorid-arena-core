@@ -1,0 +1,18 @@
+{
+    "name": "Temnorid.Arena.Core.Editor",
+    "rootNamespace": "Temnorid.Arena.Core.Editor",
+    "references": [
+        "Temnorid.Arena.Core"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,22 @@
+{
+  "name": "com.itkamianets.temnorid-arena-core",
+  "version": "0.1.0",
+  "displayName": "Temnorid Arena: Core",
+  "description": "Temnorid Arena gameplay core: combatants (health, mana, shield, death), the endless free-for-all deathmatch against bots with respawns and a scoreboard, run by the server.",
+  "unity": "6000.6",
+  "license": "MIT",
+  "author": {
+    "name": "IT Kamianets"
+  },
+  "keywords": [
+    "temnorid-arena",
+    "3d-engine",
+    "it-kamianets"
+  ],
+  "dependencies": {
+    "com.itkamianets.3d-unity-core": "0.1.0",
+    "com.itkamianets.3d-unity-character": "0.1.0",
+    "com.itkamianets.3d-unity-network": "0.1.0",
+    "com.unity.netcode.gameobjects": "2.13.3"
+  }
+}

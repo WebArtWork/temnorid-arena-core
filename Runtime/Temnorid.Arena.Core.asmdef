@@ -1,0 +1,22 @@
+{
+    "name": "Temnorid.Arena.Core",
+    "rootNamespace": "Temnorid.Arena.Core",
+    "references": [
+        "ITKamianets.Engine.Core",
+        "ITKamianets.Engine.Character",
+        "ITKamianets.Engine.Network",
+        "Unity.Netcode.Runtime",
+        "Unity.Collections"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
