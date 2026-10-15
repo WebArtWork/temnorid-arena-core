@@ -24,6 +24,9 @@ namespace Temnorid.Arena.Core
 
         [SerializeField] private bool isBot;
 
+        [Tooltip("Hide the body while dead. Off for models with a death animation, which then lie where they fell.")]
+        [SerializeField] private bool hideBodyWhenDead = true;
+
         [Tooltip("Turned off while dead, e.g. the controls and the spell caster.")]
         [SerializeField] private Behaviour[] disableWhenDead = new Behaviour[0];
 
@@ -199,9 +202,12 @@ namespace Temnorid.Arena.Core
             // Dead bodies stop where they are: no leftover command keeps them walking.
             Motor.SetCommand(new CharacterCommand { Yaw = Motor.Yaw });
 
-            foreach (var renderer in GetComponentsInChildren<Renderer>())
+            if (hideBodyWhenDead)
             {
-                renderer.enabled = alive;
+                foreach (var renderer in GetComponentsInChildren<Renderer>())
+                {
+                    renderer.enabled = alive;
+                }
             }
 
             if (!alive)

@@ -16,7 +16,7 @@ Every other `temnorid-arena-*` package builds on this one.
 
 Version 0.1.
 
-* `Combatant` (players and bots): health, mana with regeneration, a damage shield, alive/dead, display name, kills and deaths, all as network variables changed by the server; `ApplyDamage` (shield first), `TrySpendMana`, `GiveShield`, `Respawn`; hides the body and turns off listed components (controls, caster) while dead; `Defeated`, `Damaged`, `AliveChanged` events.
+* `Combatant` (players and bots): health, mana with regeneration, a damage shield, alive/dead, display name, kills and deaths, all as network variables changed by the server; `ApplyDamage` (shield first), `TrySpendMana`, `GiveShield`, `Respawn`; turns off listed components (controls, caster) while dead and hides the body unless `hideBodyWhenDead` is off (models with a death animation lie where they fell); `Defeated`, `Damaged`, `AliveChanged` events.
 * `ArenaMatch` (a network prefab spawned by `ArenaMatchSpawner` when a session starts): spawns the bots, builds the scoreboard (`Scores`) from every combatant's kills and deaths (per-combatant variables rather than one shared network list, so a client joining mid-match never sees a row twice), respawns the defeated after 3 s at the spawn point farthest from enemies, defeats anyone who falls below the arena, sets the session running on the arena, and publishes `temnorid-arena.player-defeated`.
 * `IArenaSpawns`: spawn points, provided by the map.
 

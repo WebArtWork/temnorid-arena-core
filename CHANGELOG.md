@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- `Combatant.hideBodyWhenDead` (default on): off for models with a death animation.
+
 ### Added
 
 - Initial Unity package structure (`Runtime`, `Editor`, `Tests` assemblies).
